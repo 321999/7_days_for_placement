@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>backend</title>
+    <style>
+        td{
+            border: none;
+        }
+    </style>
 
 </head>
 <body>
@@ -210,7 +215,7 @@ datatype are mandatory but constraints are optional
         <tr >
             <td>2</td>
             <td>i</td>
-            <td>cse</td>
+            <td>cse</td>n
             <td>kishore</td>
             
         </tr>
@@ -231,7 +236,70 @@ datatype are mandatory but constraints are optional
             Update Anomaly: An update anomaly happens when updating data in one place doesn't update it in all relevant places, leading to inconsistencies. For instance, if a customer changes their address, it should be updated in one location, but if the data is stored redundantly, updates might be missed in some instances.
             <description>after applyign the normalisation only point of the data is updated not if we want to update the value due to less amount of data consistency can achieve</description>
      this is way how normalisation can help us to organise the data in multiple related table to reduce the redundancy 
-        </ol>
+    
+     <ul>1NF
+        <Li>first normalisation form atleat our schema should follow the 1nf (in this we have four rule)
+            <Li>data entered in a shellshould be atomic</Li>
+            <li>data entered in a shell be of same data type</li>
+            <Li>data entered in a shell can be of any order </Li>
+            <li>colunn name of the table should not repeat to avoid the confusion </li>
+            <b>note:if any shell doesnot  have atomic vlaue of it has two value in the same cell than than seaparate it and make new record of it mean break the value into twol different atomic or break the value into atomic value </b>
+        </Li>
+    <li>2nf is the second normal form 
+        for sheman to be in 2nf it should be first 1nf 
+        1 nf normalisatoin function 
+        ie in  a cell only single or atomic shluldbe therer
+        name of the column should not repeat in a table 
+        the data entered in a colulmn should be of same datatype 
+        we can store the data in a column in any order
+
+        primary key is thekey wehich is used to represent the table some time if we hace n to n connection then make sure that each column should be dependent to this 
+        there should not be patial dependencies if it is remove it and make new 
+    <table border="1">
+        <th style="text-align: center; letter-spacing: 2;" colspan="5">score table</th>
+        <tr style="background-color: aqua;">
+            <td>score id</td>
+            <td>student_id</td>
+            <td>subject_id
+            <td>marks</td>
+            <td>teacher</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>1</td>
+            <td>82</td>
+            <td>ja</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>2</td>
+            <td>877</td>
+            <td>fcp</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>11</td>
+            <td>1</td>
+            <td>85</td>
+            <td>jav</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>11</td>
+            <td>2</td>
+            <td>82</td>
+            <td>teacher</td>
+        </tr>
+    
+    </table>
+    
+    </li>
+    </ul>
+    </ol>
+
     </p>
 </div>
 
