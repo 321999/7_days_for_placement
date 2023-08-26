@@ -60,20 +60,180 @@
     <B>NOTE:</B><q>&lt</q> is used to print &lt; and &gt is used to print &gt;
     <label>there are 5 types  of dataype in   <abbr title="structure query language is used to communicate with the data in RDBMS">SQL</abbr> </label>
             <li>char</li>
-            <li>varchar</li>
+                <description>char datatype is used to store alltypes of data and whenever we require the fixed lenth memory allocatoin than we are going yto use it 
+                    it is also called fixed length memory allcation 
+                   <li>it can holds the value upto 200 of memory</li>
+                   <Li>we can say that there is one disadvantage that unused memory is wastage</Li>
+<li>all the data in char data should be in single quote </li>
+                </description>
+            <li>varchar
+                <Li>to overcome the limitatin of char we have var which is 
+                    also called variable lenght memory allocation 
+                </Li>
+            </li>
+            
             <li>largeobject
         <li>char large object of size 4gb
             <ol>
                 <li>binary large object of size 4gb used tostore the multimedia file</li>
-                <Li></Li>
+                <Li>char large object</Li>
 
             </ol>
         </li>
+        <li>Date
+            <description>this is nto the datatype we can say it is the format which is dd mm yy but if we want to talk about the futer or past we should use dd mm yyyy</description>
+        </li>
+        <li>Number</li>
+        this datatype is used to validate teh column that it is only allow to enter the numeric value only 
+        inside t enumber we have different cases
+        one is when precision is greatere that no of decimal value 
+        <!-- </Nav> -->
+        number(4,8)
+        from 4 interger value 8 decimal value is therer
+        case 2
+        when preciion is greater tha decimal value 
+        number(4,2)
+from 4 highes digit number only 2 digit are in decimal value
+        number()
+        case3:when we havce the precision as 0 that i sthe wrong input 
+
         <!-- <li>binary large object of size 4gb used tostore the multimedia file</li> -->
             </li>
 
 </ul>
 
+<h4>
+    constraint 
+<p>the condition given  to columnm is called constraint 
+    <ul><label>there are five types of constraint 
+        <li>unique</li>
+        <p>unique is the constraint givne to column before entering data into the column so that duplicate vlaue is not allowed</p>
+        <li>not  null</li>
+        <b>note:null is the keyword used to specity empty or nothing</b>
+        <p>not null is the constraint added to the column which means not any cell should ve empty  it should have some value in it 
+        </p>
+        <p></p>
+        <li>check</li>
+        <p>check means adding an extra condtion to the column example sal column should not contain negative value</p>
+        <li>primary key</li>
+        <p>primary key is the key which uniquely represtn the table
+    <li>it  should  be  unique and not null</li>
+<Li>primary key is not mandatory but design wise it is preferable </Li> </p>
+        <li>foreign key</li>
+        <p>to eastablish the relation between two table foreign key is used 
+            <Li>foreighn key is the key which is the primary key in its original column and reside in the another table </Li>
+            <Li>foreign key can be unieque and can be not null </Li>
+            <Li>foreign key actually belongs to parent table but it stays in child table to eastablish the connection</Li>
+            hence  it is called the referentiall integrity constraint
+            <li>foreign is not mandatory </li>
+            
+        </p>
+        
+    </label></ul>
+
+    <ol>
+    <h3> <abbr title="structure query language is used to communicate with thedata in  the rdbms">sql</abbr></h3>
+        there are 5 types of SQL
+<LI>DDL</LI>
+<LI>DML</LI>
+<LI>TCL</LI>
+<li>DCL</li>
+THIS is used for cretion of the table  
+
+<li>DQL</li>
+this is used for managing and retrieval of the data from the table 
+        <!-- <li><abbr title="data query language">DQL</abbr></li> -->
+        <li> <abbr title="transaction control language">TCL</abbr> TQL</li>
+        <li> <abbr title="data manupulation language">DML</abbr> DML</li>
+        <li> <abbr title=" data control language"> DCL </abbr> DQL</li>
+        <lI><ABBR title="data definition language">DDL</ABBR></lI>
+
+        <li><abbr title="data query language">DQL</abbr></li>
+
+<h5>there are 5 componsent of <b>DQL</b></h5>
+ <li>select is used to retrieve the data from  the table which is there in the dataase
+    <description></description>
+ </li>
+ <li>projection is used the retrieve the data from the table usign column name</li>
+ <li>selection is used to retrieve the data from the table using row and column name </li>
+   <li>joins is used to retrieve the data from multiple table</li> </ol>
+
+
+combination of selct clause and from clause is called projection
+<p>whenever we open the sql as administrator
+    <Li>first command  to enter is <b>SET PAGES 300 LINES 300</b> AND SECOND ONE IS <B>CL SCR</B> AND TO know how many tables or how many tables are present in the current database we use select * from tab</Li> </p>
+</p>
+</h4>
+
+<h3 style="background-color: aqua;">keyword wise concept</h3>
+<ul>
+    <Li>expression:-any operation which give output iscalled expression 
+        in this we have two types one is direct(sal*12) and another one undirect(sal +comm)
+    <Li>alia is used to give alternate name to the column  name  </Li>
+    <li>it is the temporary name given to the column only on the resultant table </li>
+    <Li>it will not modify the original name of the column name</Li>
+    <b>any operation which performwith null gives the output as null</b>
+    col_name as helo/"hello wordl"/hello_world 
+    <!-- <li></li> -->
+    <li><b>Alias</b>  </li>
+</ul>
+
+for rdbms we have ef code rule first is te data to be entered in a cell  should be single and atomic
+to validate the table datatypes and constraint are added to the column 
+we can store the data in mujltiple table using joins
+datatype are mandatory but constraints are optional 
 </div>    
+
+<div>
+    <h1>Normalisation</h1>
+    normalisation is the technique to store and organise the data in multiple relatinal tables 
+    normalisation is a technique to organise the data into multiple related table 
+    <h45>what is redundancy</h45>
+    <p>repeatatin of the data  in multile place same column redundancy </p>
+    <aside>redundancy can increase the size of the database issures with deletein updataion and retrieving 
+    </aside>
+    <table>
+        <tr >
+            <td>id</td>
+            <td>name</td>
+            <td>branch</td>
+            <td>hod</td>
+            
+        </tr>
+        <tr >
+            <td>1</td>
+            <td>k</td>
+            <td>cse</td>
+            <td>kishore</td>
+            
+        </tr>
+        <tr >
+            <td>2</td>
+            <td>i</td>
+            <td>cse</td>
+            <td>kishore</td>
+            
+        </tr>
+
+    </table>
+    <p>o in the above table we can see that hod and branch column value are repeating which areise the problem of redundancy and which results the increse the size of the database
+        .obviously unneccessary data repeatation increase the size of the database and leads more issures as well 
+        <ol>
+            <li>insetion anomaly</li>
+            <describe>this problem occur when u cant add a piece of data wihout addign unrelated data,this results unneccessary data store in the database</describe>
+            <describe>normalisation in this can help by making the divide and rule which separating the id name branch with (branch and hod) know if u want add new record u dont have to repeat the data u just have to enter the 3 value ie name id and branch so this will reduce the redundancy</describe>
+            similarly this will arise the problem of
+            <li>deletion anomaly </li>
+            <describe>when we want to delete a piece of data unintentionally important data is also deleted which is relevant</describe>
+            <describe>after normalisation only the relevant data is deleted while dividng the table only the data is deleted which we want to delete intentionally </del> </describe>
+            <li>updation anomaly</li>
+            <description>an update anomally happens when we update the data in one place doesnot update it in all relevant place</description>
+            Update Anomaly: An update anomaly happens when updating data in one place doesn't update it in all relevant places, leading to inconsistencies. For instance, if a customer changes their address, it should be updated in one location, but if the data is stored redundantly, updates might be missed in some instances.
+            <description>after applyign the normalisation only point of the data is updated not if we want to update the value due to less amount of data consistency can achieve</description>
+     this is way how normalisation can help us to organise the data in multiple related table to reduce the redundancy 
+        </ol>
+    </p>
+</div>
+
 </body>
 </html>
