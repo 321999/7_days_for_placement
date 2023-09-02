@@ -1,5 +1,0 @@
-node is the backened programming lanuguage
-git branch -d new-branch 
-git remote add origin URL specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo.
-
-Now we are going to push our master branch to the origin url, and set it as the default remote branch:
